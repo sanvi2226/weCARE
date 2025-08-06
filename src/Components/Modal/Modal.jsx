@@ -23,7 +23,7 @@ function Modal({onClose}) {
     }
 
     return ( 
-        <div className="fixed inset-0 backdrop-blur-md bg-opacity-30 flex items-center bg-slate-900">
+        <div className="fixed inset-0 z-50 backdrop-blur-md flex items-center justify-center bg-black bg-opacity-50">
             <div className="flex flex-col w-[30%] mx-auto justify-center items-center">
 
                 <button onClick={onClose} className="place-self-end"><CircleX size={30} color="white"/></button>
@@ -59,5 +59,6 @@ function Modal({onClose}) {
         </div>
      );
 }
+
 
 export default Modal;
